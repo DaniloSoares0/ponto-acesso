@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -21,10 +22,10 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "jornada_trabalho")
-public class JornadaTrabalho implements Serializable {
+@Table(name = "localidade")
+public class Localidade implements Serializable {
 
-	private static final long serialVersionUID = -4403940595957836608L;
+	private static final long serialVersionUID = 49166301386059714L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,5 +34,6 @@ public class JornadaTrabalho implements Serializable {
 	@Column(name ="descricao")
 	private String descricao;
 	
-	
+	@ManyToOne
+	private NivelAcesso nivelAcesso;
 }

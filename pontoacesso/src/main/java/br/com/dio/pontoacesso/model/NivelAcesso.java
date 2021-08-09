@@ -21,10 +21,10 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "jornada_trabalho")
-public class JornadaTrabalho implements Serializable {
-
-	private static final long serialVersionUID = -4403940595957836608L;
+@Table(name = "nivel_acesso")
+public class NivelAcesso implements Serializable{
+	
+	private static final long serialVersionUID = -7119616185550435050L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,5 +33,5 @@ public class JornadaTrabalho implements Serializable {
 	@Column(name ="descricao")
 	private String descricao;
 	
-	
+
 }

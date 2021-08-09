@@ -1,6 +1,7 @@
 package br.com.dio.pontoacesso.model;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -21,17 +22,20 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "jornada_trabalho")
-public class JornadaTrabalho implements Serializable {
+@Table(name = "tipo_data")
+public class TipoData implements Serializable {
 
-	private static final long serialVersionUID = -4403940595957836608L;
+	private static final long serialVersionUID = -2841574020334473929L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
+	private TipoData tipoData;
+	
 	@Column(name ="descricao")
 	private String descricao;
 	
-	
+	@Column(name ="data_especial")
+	private LocalDateTime dataEspecial;
 }
