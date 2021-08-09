@@ -1,7 +1,6 @@
 <h2>Desenvolvimento de uma api para genrenciamento de ponto.</h2>
 
-* Exericio básico feito durante uma live code apenas para apresetação de conceitos 
-básicos de desenvolvimento
+* Exercício básico feito durante uma live code apenas para apresentação de conceitos básicos de desenvolvimento.
  
 
 Para executar o projeto no terminal, digite o seguinte comando:
